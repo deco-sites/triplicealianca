@@ -26,13 +26,16 @@ import * as $$$$$$$$5 from "./sections/WhatsApp.tsx";
 import * as $$$$$$$$6 from "./sections/Footer.tsx";
 import * as $$$$$$$$7 from "./sections/Header.tsx";
 import * as $$$$$$$$8 from "./sections/CookieConsent.tsx";
-import * as $$$$$$$$9 from "./sections/WishlistGallery.tsx";
-import * as $$$$$$$$10 from "./sections/ProductDetails.tsx";
-import * as $$$$$$$$11 from "./sections/Highlights.tsx";
-import * as $$$$$$$$12 from "./sections/Carousel.tsx";
-import * as $$$$$$$$13 from "./sections/ProductShelf.tsx";
-import * as $$$$$$$$14 from "./sections/DesignSystem.tsx";
-import * as $$$$$$$$15 from "./sections/Features.tsx";
+import * as $$$$$$$$9 from "./sections/Header/Header.tsx";
+import * as $$$$$$$$10 from "./sections/WishlistGallery.tsx";
+import * as $$$$$$$$11 from "./sections/ProductDetails.tsx";
+import * as $$$$$$$$12 from "./sections/Highlights.tsx";
+import * as $$$$$$$$13 from "./sections/Carousel.tsx";
+import * as $$$$$$$$14 from "./sections/ProductShelf.tsx";
+import * as $$$$$$$$15 from "./sections/DesignSystem.tsx";
+import * as $$$$$$$$16 from "./sections/Features/Features.group-278.tsx";
+import * as $$$$$$$$17 from "./sections/BannerCarousel/BannerCarousel.group-278.tsx";
+import * as $$$$$$$$18 from "./sections/Features.tsx";
 import * as $live_middleware from "$live/routes/_middleware.ts";
 import * as $live_workbench from "$live/routes/live/workbench.ts";
 import * as $live_invoke from "$live/routes/live/invoke/index.ts";
@@ -182,23 +185,28 @@ const manifest = {
     "deco-sites/std/sections/SEO.tsx": i2$$$$10,
     "deco-sites/std/sections/SEOPDP.tsx": i2$$$$11,
     "deco-sites/std/sections/SEOPLP.tsx": i2$$$$12,
+    "deco-sites/triplicealianca/sections/BannerCarousel/BannerCarousel.group-278.tsx":
+      $$$$$$$$17,
     "deco-sites/triplicealianca/sections/BannerGrid.tsx": $$$$$$$$3,
     "deco-sites/triplicealianca/sections/BannerPLP.tsx": $$$$$$$$1,
-    "deco-sites/triplicealianca/sections/Carousel.tsx": $$$$$$$$12,
+    "deco-sites/triplicealianca/sections/Carousel.tsx": $$$$$$$$13,
     "deco-sites/triplicealianca/sections/CookieConsent.tsx": $$$$$$$$8,
-    "deco-sites/triplicealianca/sections/DesignSystem.tsx": $$$$$$$$14,
+    "deco-sites/triplicealianca/sections/DesignSystem.tsx": $$$$$$$$15,
     "deco-sites/triplicealianca/sections/DiscountBanner/DiscountBanner.group-278.tsx":
       $$$$$$$$4,
-    "deco-sites/triplicealianca/sections/Features.tsx": $$$$$$$$15,
+    "deco-sites/triplicealianca/sections/Features.tsx": $$$$$$$$18,
+    "deco-sites/triplicealianca/sections/Features/Features.group-278.tsx":
+      $$$$$$$$16,
     "deco-sites/triplicealianca/sections/Footer.tsx": $$$$$$$$6,
     "deco-sites/triplicealianca/sections/Header.tsx": $$$$$$$$7,
-    "deco-sites/triplicealianca/sections/Highlights.tsx": $$$$$$$$11,
+    "deco-sites/triplicealianca/sections/Header/Header.tsx": $$$$$$$$9,
+    "deco-sites/triplicealianca/sections/Highlights.tsx": $$$$$$$$12,
     "deco-sites/triplicealianca/sections/LinkTree.tsx": $$$$$$$$2,
-    "deco-sites/triplicealianca/sections/ProductDetails.tsx": $$$$$$$$10,
-    "deco-sites/triplicealianca/sections/ProductShelf.tsx": $$$$$$$$13,
+    "deco-sites/triplicealianca/sections/ProductDetails.tsx": $$$$$$$$11,
+    "deco-sites/triplicealianca/sections/ProductShelf.tsx": $$$$$$$$14,
     "deco-sites/triplicealianca/sections/SearchResult.tsx": $$$$$$$$0,
     "deco-sites/triplicealianca/sections/WhatsApp.tsx": $$$$$$$$5,
-    "deco-sites/triplicealianca/sections/WishlistGallery.tsx": $$$$$$$$9,
+    "deco-sites/triplicealianca/sections/WishlistGallery.tsx": $$$$$$$$10,
   },
   "loaders": {
     "$live/loaders/workflows/events.ts": i2$$$0,
