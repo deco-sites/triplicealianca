@@ -50,7 +50,7 @@ function Footer({ links: sections = [], text, copyright, logo, link }: Props) {
         <div class="container w-full flex flex-col divide-y divide-primary-content">
           <FooterContainer>
             {/* Desktop view */}
-            <ul class="hidden sm:flex flex-row gap-20">
+            <ul class="hidden sm:grid grid-cols-3 gap-4">
               {sections.map((section) => (
                 <li>
                   <a
