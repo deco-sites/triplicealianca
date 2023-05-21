@@ -26,8 +26,8 @@ function FeatureHighlights(
   return (
     <>
       <div class="my-10 min-h-[280px] sm:m-0 px-8 sm:p-0 md:flex items-center">
-        <div class="bg-info py-4 sm:w-screen">
-          <div class="flex flex-col justify-evenly mx-6 sm:flex-row ">
+        <div class="bg-info py-4 sm:w-screen flex justify-center">
+          <div class="flex flex-col gap-4 w-fit mx-6 sm:flex-row ">
             <h3 className="sm:hidden text-4xl mb-4 text-center">
               {mobileTitle}
             </h3>
