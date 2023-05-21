@@ -90,23 +90,36 @@
               "deco-sites/std/sections/SEO.tsx",
               "deco-sites/std/sections/SEOPDP.tsx",
               "deco-sites/std/sections/SEOPLP.tsx",
+              "deco-sites/triplicealianca/sections/BannerCarousel.tsx",
               "deco-sites/triplicealianca/sections/BannerCarousel/BannerCarousel.group-278.tsx",
               "deco-sites/triplicealianca/sections/BannerGrid.tsx",
               "deco-sites/triplicealianca/sections/BannerPLP.tsx",
+              "deco-sites/triplicealianca/sections/BannerWithText.tsx",
+              "deco-sites/triplicealianca/sections/BannerWithText/BannerWithText.tsx",
               "deco-sites/triplicealianca/sections/Carousel.tsx",
+              "deco-sites/triplicealianca/sections/Categories.tsx",
+              "deco-sites/triplicealianca/sections/Categories/Categories.group-278.tsx",
               "deco-sites/triplicealianca/sections/CookieConsent.tsx",
               "deco-sites/triplicealianca/sections/DesignSystem.tsx",
+              "deco-sites/triplicealianca/sections/DiscountBanner.tsx",
               "deco-sites/triplicealianca/sections/DiscountBanner/DiscountBanner.group-278.tsx",
               "deco-sites/triplicealianca/sections/Features.tsx",
               "deco-sites/triplicealianca/sections/Features/Features.group-278.tsx",
               "deco-sites/triplicealianca/sections/Footer.tsx",
+              "deco-sites/triplicealianca/sections/Footer/Footer.group-278.tsx",
               "deco-sites/triplicealianca/sections/Header.tsx",
               "deco-sites/triplicealianca/sections/Header/Header.tsx",
               "deco-sites/triplicealianca/sections/Highlights.tsx",
               "deco-sites/triplicealianca/sections/LinkTree.tsx",
+              "deco-sites/triplicealianca/sections/Logos.tsx",
+              "deco-sites/triplicealianca/sections/Logos/Logos.tsx",
+              "deco-sites/triplicealianca/sections/OtherPeople.tsx",
+              "deco-sites/triplicealianca/sections/OtherPeople/OtherPeople.group-278.tsx",
               "deco-sites/triplicealianca/sections/ProductDetails.tsx",
               "deco-sites/triplicealianca/sections/ProductShelf.tsx",
               "deco-sites/triplicealianca/sections/SearchResult.tsx",
+              "deco-sites/triplicealianca/sections/ThemeLinks.tsx",
+              "deco-sites/triplicealianca/sections/ThemeLinks/ThemeLinks.group-278.tsx",
               "deco-sites/triplicealianca/sections/WhatsApp.tsx",
               "deco-sites/triplicealianca/sections/WishlistGallery.tsx",
               "$live/matchers/MatchAlways.ts",
@@ -7506,6 +7519,116 @@
       "required": [],
       "title": "deco-sites/triplicealianca/components/ui/BannerPLP.tsx@Props"
     },
+    "ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image|f4e2fa6a639dd0d858a2d18a5c9d2890": {
+      "anyOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image"
+        },
+        {
+          "type": "string"
+        }
+      ],
+      "title": "Image|f4e2fa6a639dd0d858a2d18a5c9d2890"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyV2l0aFRleHQvQmFubmVyV2l0aFRleHQudHN4@Banner": {
+      "type": "object",
+      "properties": {
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image|f4e2fa6a639dd0d858a2d18a5c9d2890",
+          "title": "Image"
+        },
+        "alt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Alt"
+        }
+      },
+      "required": [],
+      "title": "Banner"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyV2l0aFRleHQvQmFubmVyV2l0aFRleHQudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "logo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image|f4e2fa6a639dd0d858a2d18a5c9d2890",
+          "title": "Logo"
+        },
+        "logoAlt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Logo Alt"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyV2l0aFRleHQvQmFubmVyV2l0aFRleHQudHN4@Banner",
+          "title": "Image"
+        },
+        "title": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Title"
+        },
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Paragraphs"
+        },
+        "bulletPoints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Bullet Points"
+        },
+        "buttonLinks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "contained"
+                  },
+                  {
+                    "type": "string",
+                    "const": "outlined"
+                  }
+                ],
+                "type": "string",
+                "title": "Type"
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "link": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Link"
+              }
+            },
+            "required": []
+          },
+          "title": "Button Links"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/triplicealianca/sections/BannerWithText/BannerWithText.tsx@Props"
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9CYW5uZXJDYXJvdXNlbC50c3g=@Banner": {
       "type": "object",
       "properties": {
@@ -7593,6 +7716,51 @@
       },
       "required": [],
       "title": "deco-sites/triplicealianca/components/ui/BannerCarousel.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ2F0ZWdvcmllcy9DYXRlZ29yaWVzLmdyb3VwLTI3OC50c3g=@LogoGalleryProps": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "imageUrl": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+                "title": "Image Url"
+              },
+              "description": {
+                "type": "string",
+                "title": "Description"
+              },
+              "link": {
+                "type": "string",
+                "title": "Link"
+              }
+            },
+            "required": [
+              "description",
+              "link"
+            ]
+          },
+          "title": "Categories"
+        }
+      },
+      "required": [
+        "title"
+      ],
+      "title": "deco-sites/triplicealianca/sections/Categories/Categories.group-278.tsx@LogoGalleryProps"
     },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors": {
       "type": "object",
@@ -7807,7 +7975,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f9cb6c51a056afeaeaf145581645ee29": {
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f5b946358ccb1770034811772440903f": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -7823,7 +7991,7 @@
           "required": []
         }
       ],
-      "title": "Colors&f9cb6c51a056afeaeaf145581645ee29"
+      "title": "Colors&f5b946358ccb1770034811772440903f"
     },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -7926,7 +8094,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f9cb6c51a056afeaeaf145581645ee29",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f5b946358ccb1770034811772440903f",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -7963,186 +8131,6 @@
         "messages"
       ],
       "title": "deco-sites/triplicealianca/sections/DiscountBanner/DiscountBanner.group-278.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9GZWF0dXJlcy50c3g=@Feature": {
-      "type": "object",
-      "properties": {
-        "icon": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "ChevronLeft"
-            },
-            {
-              "type": "string",
-              "const": "ChevronRight"
-            },
-            {
-              "type": "string",
-              "const": "ChevronUp"
-            },
-            {
-              "type": "string",
-              "const": "ChevronDown"
-            },
-            {
-              "type": "string",
-              "const": "QuestionMarkCircle"
-            },
-            {
-              "type": "string",
-              "const": "User"
-            },
-            {
-              "type": "string",
-              "const": "ShoppingCart"
-            },
-            {
-              "type": "string",
-              "const": "Bars3"
-            },
-            {
-              "type": "string",
-              "const": "Heart"
-            },
-            {
-              "type": "string",
-              "const": "MagnifyingGlass"
-            },
-            {
-              "type": "string",
-              "const": "XMark"
-            },
-            {
-              "type": "string",
-              "const": "Plus"
-            },
-            {
-              "type": "string",
-              "const": "Minus"
-            },
-            {
-              "type": "string",
-              "const": "MapPin"
-            },
-            {
-              "type": "string",
-              "const": "Phone"
-            },
-            {
-              "type": "string",
-              "const": "Elo"
-            },
-            {
-              "type": "string",
-              "const": "Mastercard"
-            },
-            {
-              "type": "string",
-              "const": "Visa"
-            },
-            {
-              "type": "string",
-              "const": "Pix"
-            },
-            {
-              "type": "string",
-              "const": "Logo"
-            },
-            {
-              "type": "string",
-              "const": "Facebook"
-            },
-            {
-              "type": "string",
-              "const": "Instagram"
-            },
-            {
-              "type": "string",
-              "const": "Tiktok"
-            },
-            {
-              "type": "string",
-              "const": "Truck"
-            },
-            {
-              "type": "string",
-              "const": "Discount"
-            },
-            {
-              "type": "string",
-              "const": "Return"
-            },
-            {
-              "type": "string",
-              "const": "CreditCard"
-            },
-            {
-              "type": "string",
-              "const": "Deco"
-            },
-            {
-              "type": "string",
-              "const": "Discord"
-            },
-            {
-              "type": "string",
-              "const": "Trash"
-            },
-            {
-              "type": "string",
-              "const": "FilterList"
-            },
-            {
-              "type": "string",
-              "const": "WhatsApp"
-            },
-            {
-              "type": "string",
-              "const": "ArrowsPointingOut"
-            }
-          ],
-          "type": "string",
-          "description": "Image src",
-          "title": "Icon"
-        },
-        "title": {
-          "type": "string",
-          "description": "Title",
-          "title": "Title"
-        },
-        "description": {
-          "type": "string",
-          "description": "Description and Image alt text",
-          "title": "Description"
-        }
-      },
-      "required": [
-        "icon",
-        "title",
-        "description"
-      ],
-      "title": "Feature"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9GZWF0dXJlcy50c3g=@Feature[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9GZWF0dXJlcy50c3g=@Feature"
-      },
-      "title": "Feature[]"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9GZWF0dXJlcy50c3g=@Props": {
-      "type": "object",
-      "properties": {
-        "features": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9GZWF0dXJlcy50c3g=@Feature[]",
-          "title": "Features"
-        }
-      },
-      "required": [
-        "features"
-      ],
-      "title": "deco-sites/triplicealianca/components/ui/Features.tsx@Props"
     },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA==@Feature": {
       "type": "object",
@@ -8331,7 +8319,7 @@
       ],
       "title": "deco-sites/triplicealianca/sections/Features/Features.group-278.tsx@Props"
     },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@StringItem": {
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyL0Zvb3Rlci5ncm91cC0yNzgudHN4@Section": {
       "type": "object",
       "properties": {
         "label": {
@@ -8346,369 +8334,53 @@
       "required": [
         "label",
         "href"
-      ],
-      "title": "StringItem"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem": {
-      "type": "object",
-      "properties": {
-        "icon": {
-          "anyOf": [
-            {
-              "type": "string",
-              "const": "ChevronLeft"
-            },
-            {
-              "type": "string",
-              "const": "ChevronRight"
-            },
-            {
-              "type": "string",
-              "const": "ChevronUp"
-            },
-            {
-              "type": "string",
-              "const": "ChevronDown"
-            },
-            {
-              "type": "string",
-              "const": "QuestionMarkCircle"
-            },
-            {
-              "type": "string",
-              "const": "User"
-            },
-            {
-              "type": "string",
-              "const": "ShoppingCart"
-            },
-            {
-              "type": "string",
-              "const": "Bars3"
-            },
-            {
-              "type": "string",
-              "const": "Heart"
-            },
-            {
-              "type": "string",
-              "const": "MagnifyingGlass"
-            },
-            {
-              "type": "string",
-              "const": "XMark"
-            },
-            {
-              "type": "string",
-              "const": "Plus"
-            },
-            {
-              "type": "string",
-              "const": "Minus"
-            },
-            {
-              "type": "string",
-              "const": "MapPin"
-            },
-            {
-              "type": "string",
-              "const": "Phone"
-            },
-            {
-              "type": "string",
-              "const": "Elo"
-            },
-            {
-              "type": "string",
-              "const": "Mastercard"
-            },
-            {
-              "type": "string",
-              "const": "Visa"
-            },
-            {
-              "type": "string",
-              "const": "Pix"
-            },
-            {
-              "type": "string",
-              "const": "Logo"
-            },
-            {
-              "type": "string",
-              "const": "Facebook"
-            },
-            {
-              "type": "string",
-              "const": "Instagram"
-            },
-            {
-              "type": "string",
-              "const": "Tiktok"
-            },
-            {
-              "type": "string",
-              "const": "Truck"
-            },
-            {
-              "type": "string",
-              "const": "Discount"
-            },
-            {
-              "type": "string",
-              "const": "Return"
-            },
-            {
-              "type": "string",
-              "const": "CreditCard"
-            },
-            {
-              "type": "string",
-              "const": "Deco"
-            },
-            {
-              "type": "string",
-              "const": "Discord"
-            },
-            {
-              "type": "string",
-              "const": "Trash"
-            },
-            {
-              "type": "string",
-              "const": "FilterList"
-            },
-            {
-              "type": "string",
-              "const": "WhatsApp"
-            },
-            {
-              "type": "string",
-              "const": "ArrowsPointingOut"
-            }
-          ],
-          "type": "string",
-          "title": "Icon"
-        }
-      },
-      "required": [
-        "icon"
-      ],
-      "title": "IconItem"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem|StringItem": {
-      "anyOf": [
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@StringItem"
-        },
-        {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem"
-        }
-      ],
-      "title": "IconItem|StringItem"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem|StringItem[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem|StringItem"
-      },
-      "title": "IconItem|StringItem[]"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Section": {
-      "type": "object",
-      "properties": {
-        "label": {
-          "type": "string",
-          "title": "Label"
-        },
-        "children": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@IconItem|StringItem[]",
-          "title": "Children"
-        }
-      },
-      "required": [
-        "label",
-        "children"
       ],
       "title": "Section"
     },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Section[]": {
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyL0Zvb3Rlci5ncm91cC0yNzgudHN4@Section[]": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Section"
+        "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyL0Zvb3Rlci5ncm91cC0yNzgudHN4@Section"
       },
       "title": "Section[]"
     },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Props": {
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyL0Zvb3Rlci5ncm91cC0yNzgudHN4@Props": {
       "type": "object",
       "properties": {
-        "sections": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Section[]",
-          "title": "Sections"
+        "links": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyL0Zvb3Rlci5ncm91cC0yNzgudHN4@Section[]",
+          "title": "Links"
+        },
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "icon auxiliar text",
+          "title": "Text"
+        },
+        "logo": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image|f4e2fa6a639dd0d858a2d18a5c9d2890",
+          "title": "Logo"
+        },
+        "link": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "logo link",
+          "title": "Link"
+        },
+        "copyright": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Copyright"
         }
       },
       "required": [],
-      "title": "deco-sites/triplicealianca/components/footer/Footer.tsx@Props"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9zZWFyY2gvU2VhcmNoYmFyLnRzeA==@EditableProps": {
-      "type": "object",
-      "properties": {
-        "placeholder": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Placeholder",
-          "description": "Search bar default placeholder message",
-          "default": "What are you looking for?"
-        },
-        "action": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Page path",
-          "description": "When user clicks on the search button, navigate it to",
-          "default": "/s"
-        },
-        "name": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Term name",
-          "description": "Querystring param used when navigating the user",
-          "default": "q"
-        },
-        "query": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "title": "Query"
-        }
-      },
-      "required": [],
-      "title": "EditableProps"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9oZWFkZXIvSGVhZGVyLnRzeA==@NavItem": {
-      "type": "object",
-      "properties": {
-        "label": {
-          "type": "string",
-          "title": "Label"
-        },
-        "href": {
-          "type": "string",
-          "title": "Href"
-        },
-        "children": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "label": {
-                "type": "string",
-                "title": "Label"
-              },
-              "href": {
-                "type": "string",
-                "title": "Href"
-              },
-              "children": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "properties": {
-                    "label": {
-                      "type": "string",
-                      "title": "Label"
-                    },
-                    "href": {
-                      "type": "string",
-                      "title": "Href"
-                    }
-                  },
-                  "required": [
-                    "label",
-                    "href"
-                  ]
-                },
-                "title": "Children"
-              }
-            },
-            "required": [
-              "label",
-              "href"
-            ]
-          },
-          "title": "Children"
-        },
-        "image": {
-          "type": "object",
-          "properties": {
-            "src": {
-              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
-              "title": "Src"
-            },
-            "alt": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "title": "Alt"
-            }
-          },
-          "required": [],
-          "title": "Image"
-        }
-      },
-      "required": [
-        "label",
-        "href"
-      ],
-      "title": "NavItem"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9oZWFkZXIvSGVhZGVyLnRzeA==@NavItem[]": {
-      "type": "array",
-      "items": {
-        "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9oZWFkZXIvSGVhZGVyLnRzeA==@NavItem"
-      },
-      "title": "NavItem[]"
-    },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9oZWFkZXIvSGVhZGVyLnRzeA==@Props": {
-      "type": "object",
-      "properties": {
-        "alerts": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Alerts"
-        },
-        "searchbar": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9zZWFyY2gvU2VhcmNoYmFyLnRzeA==@EditableProps",
-          "title": "Search Bar"
-        },
-        "navItems": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9oZWFkZXIvSGVhZGVyLnRzeA==@NavItem[]",
-          "title": "Navigation items",
-          "description": "Navigation items used both on mobile and desktop menus"
-        },
-        "products": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Product[]|null",
-          "title": "Product suggestions",
-          "description": "Product suggestions displayed on search"
-        },
-        "suggestions": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Suggestion|null",
-          "title": "Enable Top Search terms"
-        }
-      },
-      "required": [
-        "alerts"
-      ],
-      "title": "deco-sites/triplicealianca/components/header/Header.tsx@Props"
+      "title": "deco-sites/triplicealianca/sections/Footer/Footer.group-278.tsx@Props"
     },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGVhZGVyL0hlYWRlci50c3g=@Props": {
       "type": "object",
@@ -9031,6 +8703,70 @@
       "required": [],
       "title": "deco-sites/triplicealianca/components/ui/LinkTree.tsx@Props"
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvTG9nb3MvTG9nb3MudHN4@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Subtitle"
+        },
+        "imgUrl": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "url": {
+                "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image|f4e2fa6a639dd0d858a2d18a5c9d2890",
+                "title": "Url"
+              },
+              "textAlt": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Text Alt"
+              }
+            },
+            "required": []
+          },
+          "title": "Img Url"
+        }
+      },
+      "required": [
+        "title",
+        "subtitle"
+      ],
+      "title": "deco-sites/triplicealianca/sections/Logos/Logos.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvT3RoZXJQZW9wbGUvT3RoZXJQZW9wbGUuZ3JvdXAtMjc4LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "products": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Product[]|null",
+          "title": "Products"
+        },
+        "itemsPerPage": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Items Per Page"
+        }
+      },
+      "required": [
+        "title",
+        "products"
+      ],
+      "title": "deco-sites/triplicealianca/sections/OtherPeople/OtherPeople.group-278.tsx@Props"
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9wcm9kdWN0L1Byb2R1Y3REZXRhaWxzLnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -9142,6 +8878,76 @@
         "columns"
       ],
       "title": "deco-sites/triplicealianca/components/search/SearchResult.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvVGhlbWVMaW5rcy9UaGVtZUxpbmtzLmdyb3VwLTI3OC50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title"
+        },
+        "subtitle": {
+          "type": "string",
+          "title": "Subtitle"
+        },
+        "themes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title"
+              },
+              "subThemes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "title": {
+                      "type": "string",
+                      "title": "Title"
+                    },
+                    "details": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "title": "Details"
+                    },
+                    "link": {
+                      "type": "string",
+                      "title": "Link"
+                    }
+                  },
+                  "required": [
+                    "title",
+                    "link"
+                  ]
+                },
+                "title": "Sub Themes"
+              }
+            },
+            "required": [
+              "title",
+              "subThemes"
+            ]
+          },
+          "title": "Themes"
+        },
+        "buttonLink": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Button Link"
+        }
+      },
+      "required": [
+        "title",
+        "subtitle"
+      ],
+      "title": "deco-sites/triplicealianca/sections/ThemeLinks/ThemeLinks.group-278.tsx@Props"
     },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9XaGF0c0FwcC50c3g=@Props": {
       "type": "object",
@@ -11505,6 +11311,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwudHN4": {
+      "title": "deco-sites/triplicealianca/sections/BannerCarousel.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/BannerCarousel.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/BannerCarousel.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA==": {
       "title": "deco-sites/triplicealianca/sections/BannerCarousel/BannerCarousel.group-278.tsx",
       "type": "object",
@@ -11568,6 +11395,48 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyV2l0aFRleHQudHN4": {
+      "title": "deco-sites/triplicealianca/sections/BannerWithText.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyV2l0aFRleHQvQmFubmVyV2l0aFRleHQudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/BannerWithText.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/BannerWithText.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyV2l0aFRleHQvQmFubmVyV2l0aFRleHQudHN4": {
+      "title": "deco-sites/triplicealianca/sections/BannerWithText/BannerWithText.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyV2l0aFRleHQvQmFubmVyV2l0aFRleHQudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/BannerWithText/BannerWithText.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/BannerWithText/BannerWithText.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ2Fyb3VzZWwudHN4": {
       "title": "deco-sites/triplicealianca/sections/Carousel.tsx",
       "type": "object",
@@ -11586,6 +11455,48 @@
             "deco-sites/triplicealianca/sections/Carousel.tsx"
           ],
           "default": "deco-sites/triplicealianca/sections/Carousel.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ2F0ZWdvcmllcy50c3g=": {
+      "title": "deco-sites/triplicealianca/sections/Categories.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ2F0ZWdvcmllcy9DYXRlZ29yaWVzLmdyb3VwLTI3OC50c3g=@LogoGalleryProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/Categories.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/Categories.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ2F0ZWdvcmllcy9DYXRlZ29yaWVzLmdyb3VwLTI3OC50c3g=": {
+      "title": "deco-sites/triplicealianca/sections/Categories/Categories.group-278.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ2F0ZWdvcmllcy9DYXRlZ29yaWVzLmdyb3VwLTI3OC50c3g=@LogoGalleryProps"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/Categories/Categories.group-278.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/Categories/Categories.group-278.tsx"
         }
       }
     },
@@ -11626,6 +11537,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGlzY291bnRCYW5uZXIudHN4": {
+      "title": "deco-sites/triplicealianca/sections/DiscountBanner.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGlzY291bnRCYW5uZXIvRGlzY291bnRCYW5uZXIuZ3JvdXAtMjc4LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/DiscountBanner.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/DiscountBanner.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGlzY291bnRCYW5uZXIvRGlzY291bnRCYW5uZXIuZ3JvdXAtMjc4LnRzeA==": {
       "title": "deco-sites/triplicealianca/sections/DiscountBanner/DiscountBanner.group-278.tsx",
       "type": "object",
@@ -11652,7 +11584,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9GZWF0dXJlcy50c3g=@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA==@Props"
         }
       ],
       "required": [
@@ -11694,7 +11626,7 @@
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyL0Zvb3Rlci5ncm91cC0yNzgudHN4@Props"
         }
       ],
       "required": [
@@ -11710,12 +11642,33 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyL0Zvb3Rlci5ncm91cC0yNzgudHN4": {
+      "title": "deco-sites/triplicealianca/sections/Footer/Footer.group-278.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyL0Zvb3Rlci5ncm91cC0yNzgudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/Footer/Footer.group-278.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/Footer/Footer.group-278.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGVhZGVyLnRzeA==": {
       "title": "deco-sites/triplicealianca/sections/Header.tsx",
       "type": "object",
       "allOf": [
         {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9oZWFkZXIvSGVhZGVyLnRzeA==@Props"
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGVhZGVyL0hlYWRlci50c3g=@Props"
         }
       ],
       "required": [
@@ -11794,6 +11747,90 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvTG9nb3MudHN4": {
+      "title": "deco-sites/triplicealianca/sections/Logos.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvTG9nb3MvTG9nb3MudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/Logos.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/Logos.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvTG9nb3MvTG9nb3MudHN4": {
+      "title": "deco-sites/triplicealianca/sections/Logos/Logos.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvTG9nb3MvTG9nb3MudHN4@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/Logos/Logos.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/Logos/Logos.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvT3RoZXJQZW9wbGUudHN4": {
+      "title": "deco-sites/triplicealianca/sections/OtherPeople.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvT3RoZXJQZW9wbGUvT3RoZXJQZW9wbGUuZ3JvdXAtMjc4LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/OtherPeople.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/OtherPeople.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvT3RoZXJQZW9wbGUvT3RoZXJQZW9wbGUuZ3JvdXAtMjc4LnRzeA==": {
+      "title": "deco-sites/triplicealianca/sections/OtherPeople/OtherPeople.group-278.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvT3RoZXJQZW9wbGUvT3RoZXJQZW9wbGUuZ3JvdXAtMjc4LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/OtherPeople/OtherPeople.group-278.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/OtherPeople/OtherPeople.group-278.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdERldGFpbHMudHN4": {
       "title": "deco-sites/triplicealianca/sections/ProductDetails.tsx",
       "type": "object",
@@ -11854,6 +11891,48 @@
             "deco-sites/triplicealianca/sections/SearchResult.tsx"
           ],
           "default": "deco-sites/triplicealianca/sections/SearchResult.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvVGhlbWVMaW5rcy50c3g=": {
+      "title": "deco-sites/triplicealianca/sections/ThemeLinks.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvVGhlbWVMaW5rcy9UaGVtZUxpbmtzLmdyb3VwLTI3OC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/ThemeLinks.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/ThemeLinks.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvVGhlbWVMaW5rcy9UaGVtZUxpbmtzLmdyb3VwLTI3OC50c3g=": {
+      "title": "deco-sites/triplicealianca/sections/ThemeLinks/ThemeLinks.group-278.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvVGhlbWVMaW5rcy9UaGVtZUxpbmtzLmdyb3VwLTI3OC50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/ThemeLinks/ThemeLinks.group-278.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/ThemeLinks/ThemeLinks.group-278.tsx"
         }
       }
     },
@@ -12844,6 +12923,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvU0VPUExQLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA=="
         },
         {
@@ -12853,13 +12935,28 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyUExQLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyV2l0aFRleHQudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyV2l0aFRleHQvQmFubmVyV2l0aFRleHQudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ2Fyb3VzZWwudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ2F0ZWdvcmllcy50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ2F0ZWdvcmllcy9DYXRlZ29yaWVzLmdyb3VwLTI3OC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQ29va2llQ29uc2VudC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGlzY291bnRCYW5uZXIudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGlzY291bnRCYW5uZXIvRGlzY291bnRCYW5uZXIuZ3JvdXAtMjc4LnRzeA=="
@@ -12874,6 +12971,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyL0Zvb3Rlci5ncm91cC0yNzgudHN4"
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGVhZGVyLnRzeA=="
         },
         {
@@ -12886,6 +12986,18 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvTGlua1RyZWUudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvTG9nb3MudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvTG9nb3MvTG9nb3MudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvT3RoZXJQZW9wbGUudHN4"
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvT3RoZXJQZW9wbGUvT3RoZXJQZW9wbGUuZ3JvdXAtMjc4LnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdERldGFpbHMudHN4"
         },
         {
@@ -12893,6 +13005,12 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvU2VhcmNoUmVzdWx0LnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvVGhlbWVMaW5rcy50c3g="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvVGhlbWVMaW5rcy9UaGVtZUxpbmtzLmdyb3VwLTI3OC50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvV2hhdHNBcHAudHN4"

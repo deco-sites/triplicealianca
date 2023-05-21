@@ -53,12 +53,12 @@ function Footer({ links: sections = [], text, copyright, logo, link }: Props) {
             <ul class="hidden sm:flex flex-row gap-20">
               {sections.map((section) => (
                 <li>
-                    <a
-                      class="font-medium text-xl text-primary-content hover:underline text-primary-content"
-                      href={section.href}
-                    >
-                      {section.label}
-                    </a>
+                  <a
+                    class="font-medium text-xl text-primary-content hover:underline text-primary-content"
+                    href={section.href}
+                  >
+                    {section.label}
+                  </a>
                 </li>
               ))}
             </ul>
@@ -67,12 +67,12 @@ function Footer({ links: sections = [], text, copyright, logo, link }: Props) {
             <ul class="flex flex-col sm:hidden sm:flex-row gap-4">
               {sections.map((section) => (
                 <li>
-                    <a
-                      class="font-medium text-md text-primary-content hover:underline text-primary-content"
-                      href={section.href}
-                    >
-                      {section.label}
-                    </a>
+                  <a
+                    class="font-medium text-md text-primary-content hover:underline text-primary-content"
+                    href={section.href}
+                  >
+                    {section.label}
+                  </a>
                 </li>
               ))}
             </ul>
