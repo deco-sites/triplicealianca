@@ -17,7 +17,7 @@ interface Props {
 }
 
 const WIDTH = 200;
-const HEIGHT = 279;
+const HEIGHT = 100;
 
 function ProductCard({ product }: Props) {
   const {

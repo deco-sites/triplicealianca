@@ -115,6 +115,7 @@
               "deco-sites/triplicealianca/sections/Logos/Logos.tsx",
               "deco-sites/triplicealianca/sections/OtherPeople.tsx",
               "deco-sites/triplicealianca/sections/OtherPeople/OtherPeople.group-278.tsx",
+              "deco-sites/triplicealianca/sections/ProductCard/ProductCard.tsx",
               "deco-sites/triplicealianca/sections/ProductDetails.tsx",
               "deco-sites/triplicealianca/sections/ProductShelf.tsx",
               "deco-sites/triplicealianca/sections/SearchResult.tsx",
@@ -7975,7 +7976,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f9cb6c51a056afeaeaf145581645ee29": {
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f5b946358ccb1770034811772440903f": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -7991,7 +7992,7 @@
           "required": []
         }
       ],
-      "title": "Colors&f9cb6c51a056afeaeaf145581645ee29"
+      "title": "Colors&f5b946358ccb1770034811772440903f"
     },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -8094,7 +8095,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f9cb6c51a056afeaeaf145581645ee29",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f5b946358ccb1770034811772440903f",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -8739,6 +8740,53 @@
       ],
       "title": "deco-sites/triplicealianca/sections/Logos/Logos.tsx@Props"
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdENhcmQvUHJvZHVjdENhcmQudHN4@Product": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name"
+        },
+        "productId": {
+          "type": "string",
+          "title": "Product Id"
+        },
+        "url": {
+          "type": "string",
+          "title": "Url"
+        },
+        "image": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image|f4e2fa6a639dd0d858a2d18a5c9d2890",
+          "title": "Image"
+        },
+        "fullPrice": {
+          "type": "number",
+          "title": "Full Price"
+        },
+        "currentPrice": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Current Price"
+        }
+      },
+      "required": [
+        "name",
+        "productId",
+        "url",
+        "image",
+        "fullPrice"
+      ],
+      "title": "Product"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdENhcmQvUHJvZHVjdENhcmQudHN4@Product[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdENhcmQvUHJvZHVjdENhcmQudHN4@Product"
+      },
+      "title": "Product[]"
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvT3RoZXJQZW9wbGUvT3RoZXJQZW9wbGUuZ3JvdXAtMjc4LnRzeA==@Props": {
       "type": "object",
       "properties": {
@@ -8747,7 +8795,7 @@
           "title": "Title"
         },
         "products": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tbWVyY2UvdHlwZXMudHM=@Product[]|null",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdENhcmQvUHJvZHVjdENhcmQudHN4@Product[]",
           "title": "Products"
         },
         "itemsPerPage": {
@@ -8759,8 +8807,7 @@
         }
       },
       "required": [
-        "title",
-        "products"
+        "title"
       ],
       "title": "deco-sites/triplicealianca/sections/OtherPeople/OtherPeople.group-278.tsx@Props"
     },
@@ -11828,6 +11875,22 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdENhcmQvUHJvZHVjdENhcmQudHN4": {
+      "title": "deco-sites/triplicealianca/sections/ProductCard/ProductCard.tsx",
+      "type": "object",
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/ProductCard/ProductCard.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/ProductCard/ProductCard.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdERldGFpbHMudHN4": {
       "title": "deco-sites/triplicealianca/sections/ProductDetails.tsx",
       "type": "object",
@@ -12993,6 +13056,9 @@
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvT3RoZXJQZW9wbGUvT3RoZXJQZW9wbGUuZ3JvdXAtMjc4LnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdENhcmQvUHJvZHVjdENhcmQudHN4"
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvUHJvZHVjdERldGFpbHMudHN4"
