@@ -7975,7 +7975,7 @@
       "required": [],
       "title": "OptionalColors"
     },
-    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f5b946358ccb1770034811772440903f": {
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f9cb6c51a056afeaeaf145581645ee29": {
       "allOf": [
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors"
@@ -7991,7 +7991,7 @@
           "required": []
         }
       ],
-      "title": "Colors&f5b946358ccb1770034811772440903f"
+      "title": "Colors&f9cb6c51a056afeaeaf145581645ee29"
     },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Miscellaneous": {
       "type": "object",
@@ -8094,7 +8094,7 @@
       "type": "object",
       "properties": {
         "colors": {
-          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f5b946358ccb1770034811772440903f",
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRGVzaWduU3lzdGVtLnRzeA==@Colors&f9cb6c51a056afeaeaf145581645ee29",
           "title": "Colors"
         },
         "miscellaneous": {
@@ -8437,10 +8437,7 @@
           "type": "object",
           "properties": {
             "src": {
-              "type": [
-                "string",
-                "null"
-              ],
+              "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image|f4e2fa6a639dd0d858a2d18a5c9d2890",
               "title": "Src"
             },
             "alt": {

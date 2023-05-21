@@ -1,5 +1,6 @@
 import IconMenu2 from "https://deno.land/x/tabler_icons_tsx@0.0.3/tsx/menu-2.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
+import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
 export interface Props {
   menuHamburger?: Array<{
@@ -11,7 +12,7 @@ export interface Props {
     url?: string;
   }>;
   logo: {
-    src?: string;
+    src?: string | LiveImage;
     alt?: string;
   };
   searchPlaceholder?: string;
