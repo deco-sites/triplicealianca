@@ -90,6 +90,7 @@
               "deco-sites/std/sections/SEO.tsx",
               "deco-sites/std/sections/SEOPDP.tsx",
               "deco-sites/std/sections/SEOPLP.tsx",
+              "deco-sites/triplicealianca/sections/BannerCarousel/BannerCarousel.group-278.tsx",
               "deco-sites/triplicealianca/sections/BannerGrid.tsx",
               "deco-sites/triplicealianca/sections/BannerPLP.tsx",
               "deco-sites/triplicealianca/sections/Carousel.tsx",
@@ -97,8 +98,10 @@
               "deco-sites/triplicealianca/sections/DesignSystem.tsx",
               "deco-sites/triplicealianca/sections/DiscountBanner/DiscountBanner.group-278.tsx",
               "deco-sites/triplicealianca/sections/Features.tsx",
+              "deco-sites/triplicealianca/sections/Features/Features.group-278.tsx",
               "deco-sites/triplicealianca/sections/Footer.tsx",
               "deco-sites/triplicealianca/sections/Header.tsx",
+              "deco-sites/triplicealianca/sections/Header/Header.tsx",
               "deco-sites/triplicealianca/sections/Highlights.tsx",
               "deco-sites/triplicealianca/sections/LinkTree.tsx",
               "deco-sites/triplicealianca/sections/ProductDetails.tsx",
@@ -7134,6 +7137,107 @@
       "format": "image-uri",
       "title": "Image"
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA==@Banner": {
+      "type": "object",
+      "properties": {
+        "desktop": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "desktop otimized image",
+          "title": "Desktop"
+        },
+        "mobile": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvY29tcG9uZW50cy90eXBlcy50cw==@Image",
+          "description": "mobile otimized image",
+          "title": "Mobile"
+        },
+        "alt": {
+          "type": "string",
+          "description": "Image's alt text",
+          "title": "Alt"
+        },
+        "title": {
+          "type": "string",
+          "description": "Image text title",
+          "title": "Title"
+        },
+        "subTitle": {
+          "type": "string",
+          "description": "Image text subtitle",
+          "title": "Sub Title"
+        },
+        "primaryButton": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Principal Button Text",
+          "title": "Primary Button"
+        },
+        "secundaryButtons": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "href": {
+                "type": "string",
+                "title": "Href"
+              },
+              "label": {
+                "type": "string",
+                "title": "Label"
+              }
+            },
+            "required": [
+              "href",
+              "label"
+            ]
+          },
+          "title": "Secundary Buttons"
+        }
+      },
+      "required": [
+        "desktop",
+        "mobile",
+        "alt",
+        "title",
+        "subTitle"
+      ],
+      "title": "Banner"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA==@Banner[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA==@Banner"
+      },
+      "title": "Banner[]"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "images": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA==@Banner[]",
+          "title": "Images"
+        },
+        "preload": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Check this option when this banner is the biggest image on the screen for image optimizations",
+          "title": "Preload"
+        },
+        "interval": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "title": "Autoplay interval",
+          "description": "time (in seconds) to start the carousel autoplay"
+        }
+      },
+      "required": [],
+      "title": "deco-sites/triplicealianca/sections/BannerCarousel/BannerCarousel.group-278.tsx@Props"
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9CYW5uZXJHcmlkLnRzeA==@Banner": {
       "type": "object",
       "properties": {
@@ -8040,6 +8144,193 @@
       ],
       "title": "deco-sites/triplicealianca/components/ui/Features.tsx@Props"
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA==@Feature": {
+      "type": "object",
+      "properties": {
+        "icon": {
+          "anyOf": [
+            {
+              "type": "string",
+              "const": "ChevronLeft"
+            },
+            {
+              "type": "string",
+              "const": "ChevronRight"
+            },
+            {
+              "type": "string",
+              "const": "ChevronUp"
+            },
+            {
+              "type": "string",
+              "const": "ChevronDown"
+            },
+            {
+              "type": "string",
+              "const": "QuestionMarkCircle"
+            },
+            {
+              "type": "string",
+              "const": "User"
+            },
+            {
+              "type": "string",
+              "const": "ShoppingCart"
+            },
+            {
+              "type": "string",
+              "const": "Bars3"
+            },
+            {
+              "type": "string",
+              "const": "Heart"
+            },
+            {
+              "type": "string",
+              "const": "MagnifyingGlass"
+            },
+            {
+              "type": "string",
+              "const": "XMark"
+            },
+            {
+              "type": "string",
+              "const": "Plus"
+            },
+            {
+              "type": "string",
+              "const": "Minus"
+            },
+            {
+              "type": "string",
+              "const": "MapPin"
+            },
+            {
+              "type": "string",
+              "const": "Phone"
+            },
+            {
+              "type": "string",
+              "const": "Elo"
+            },
+            {
+              "type": "string",
+              "const": "Mastercard"
+            },
+            {
+              "type": "string",
+              "const": "Visa"
+            },
+            {
+              "type": "string",
+              "const": "Pix"
+            },
+            {
+              "type": "string",
+              "const": "Logo"
+            },
+            {
+              "type": "string",
+              "const": "Facebook"
+            },
+            {
+              "type": "string",
+              "const": "Instagram"
+            },
+            {
+              "type": "string",
+              "const": "Tiktok"
+            },
+            {
+              "type": "string",
+              "const": "Truck"
+            },
+            {
+              "type": "string",
+              "const": "Discount"
+            },
+            {
+              "type": "string",
+              "const": "Return"
+            },
+            {
+              "type": "string",
+              "const": "CreditCard"
+            },
+            {
+              "type": "string",
+              "const": "Deco"
+            },
+            {
+              "type": "string",
+              "const": "Discord"
+            },
+            {
+              "type": "string",
+              "const": "Trash"
+            },
+            {
+              "type": "string",
+              "const": "FilterList"
+            },
+            {
+              "type": "string",
+              "const": "WhatsApp"
+            },
+            {
+              "type": "string",
+              "const": "ArrowsPointingOut"
+            }
+          ],
+          "type": "string",
+          "description": "Image src",
+          "title": "Icon"
+        },
+        "title": {
+          "type": "string",
+          "description": "Title",
+          "title": "Title"
+        },
+        "description": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Description"
+        }
+      },
+      "required": [
+        "icon",
+        "title"
+      ],
+      "title": "Feature"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA==@Feature[]": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA==@Feature"
+      },
+      "title": "Feature[]"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA==@Props": {
+      "type": "object",
+      "properties": {
+        "mobileTitle": {
+          "type": "string",
+          "description": "Title for mobile version only",
+          "title": "Mobile Title"
+        },
+        "features": {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA==@Feature[]",
+          "title": "Features"
+        }
+      },
+      "required": [
+        "mobileTitle",
+        "features"
+      ],
+      "title": "deco-sites/triplicealianca/sections/Features/Features.group-278.tsx@Props"
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy9mb290ZXIvRm9vdGVyLnRzeA==@StringItem": {
       "type": "object",
       "properties": {
@@ -8418,6 +8709,178 @@
         "alerts"
       ],
       "title": "deco-sites/triplicealianca/components/header/Header.tsx@Props"
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGVhZGVyL0hlYWRlci50c3g=@Props": {
+      "type": "object",
+      "properties": {
+        "menuHamburger": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Url"
+              }
+            },
+            "required": []
+          },
+          "title": "Menu Hamburger"
+        },
+        "menuOthers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Title"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Url"
+              }
+            },
+            "required": []
+          },
+          "title": "Menu Others"
+        },
+        "logo": {
+          "type": "object",
+          "properties": {
+            "src": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Src"
+            },
+            "alt": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Alt"
+            }
+          },
+          "required": [],
+          "title": "Logo"
+        },
+        "searchPlaceholder": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Search Placeholder"
+        },
+        "iconsUrls": {
+          "type": "object",
+          "properties": {
+            "search": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Search"
+            },
+            "heart": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Heart"
+            },
+            "location": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Location"
+            },
+            "person": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Person"
+            },
+            "shop": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "title": "Shop"
+            }
+          },
+          "required": [],
+          "title": "Icons Urls"
+        },
+        "buttonLinks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "const": "contained"
+                  },
+                  {
+                    "type": "string",
+                    "const": "outlined"
+                  }
+                ],
+                "type": "string",
+                "title": "Type"
+              },
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Label"
+              },
+              "url": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "title": "Url"
+              }
+            },
+            "required": []
+          },
+          "title": "Button Links"
+        },
+        "language": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Language"
+        }
+      },
+      "required": [
+        "logo"
+      ],
+      "title": "deco-sites/triplicealianca/sections/Header/Header.tsx@Props"
     },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2EvY29tcG9uZW50cy91aS9IaWdobGlnaHRzLnRzeA==@Highlight": {
       "type": "object",
@@ -8881,7 +9344,11 @@
         },
         "name": {
           "type": "string",
-          "title": "Name"
+          "title": "The audience name (will be used on cookies).",
+          "description": "Add a meaningful short word for the audience name.",
+          "maxLength": 22,
+          "minLength": 3,
+          "pattern": "^[A-Za-z0-9_]+$"
         },
         "routes": {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2ZsYWdzL2F1ZGllbmNlLnRz@Route[]",
@@ -8997,7 +9464,7 @@
       ],
       "title": "WorkflowRef"
     },
-    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef": {
+    "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef": {
       "anyOf": [
         {
           "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@WorkflowRef"
@@ -9015,13 +9482,13 @@
           ]
         }
       ],
-      "title": "95abd76f92dd138f258080286726977e|WorkflowRef"
+      "title": "6fafe0f553db3c0685828404a37be338|WorkflowRef"
     },
     "ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@Props": {
       "type": "object",
       "properties": {
         "workflow": {
-          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@95abd76f92dd138f258080286726977e|WorkflowRef",
+          "$ref": "#/definitions/ZGVjby1jeC9saXZlL2FjdGlvbnMvd29ya2Zsb3dzL3N0YXJ0LnRz@6fafe0f553db3c0685828404a37be338|WorkflowRef",
           "title": "Workflow"
         },
         "id": {
@@ -11038,6 +11505,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA==": {
+      "title": "deco-sites/triplicealianca/sections/BannerCarousel/BannerCarousel.group-278.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/BannerCarousel/BannerCarousel.group-278.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/BannerCarousel/BannerCarousel.group-278.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyR3JpZC50c3g=": {
       "title": "deco-sites/triplicealianca/sections/BannerGrid.tsx",
       "type": "object",
@@ -11180,6 +11668,27 @@
         }
       }
     },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA==": {
+      "title": "deco-sites/triplicealianca/sections/Features/Features.group-278.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA==@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/Features/Features.group-278.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/Features/Features.group-278.tsx"
+        }
+      }
+    },
     "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyLnRzeA==": {
       "title": "deco-sites/triplicealianca/sections/Footer.tsx",
       "type": "object",
@@ -11219,6 +11728,27 @@
             "deco-sites/triplicealianca/sections/Header.tsx"
           ],
           "default": "deco-sites/triplicealianca/sections/Header.tsx"
+        }
+      }
+    },
+    "ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGVhZGVyL0hlYWRlci50c3g=": {
+      "title": "deco-sites/triplicealianca/sections/Header/Header.tsx",
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGVhZGVyL0hlYWRlci50c3g=@Props"
+        }
+      ],
+      "required": [
+        "__resolveType"
+      ],
+      "properties": {
+        "__resolveType": {
+          "type": "string",
+          "enum": [
+            "deco-sites/triplicealianca/sections/Header/Header.tsx"
+          ],
+          "default": "deco-sites/triplicealianca/sections/Header/Header.tsx"
         }
       }
     },
@@ -12314,6 +12844,9 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy9zdGQvc2VjdGlvbnMvU0VPUExQLnRzeA=="
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyQ2Fyb3VzZWwvQmFubmVyQ2Fyb3VzZWwuZ3JvdXAtMjc4LnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvQmFubmVyR3JpZC50c3g="
         },
         {
@@ -12335,10 +12868,16 @@
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMudHN4"
         },
         {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRmVhdHVyZXMvRmVhdHVyZXMuZ3JvdXAtMjc4LnRzeA=="
+        },
+        {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvRm9vdGVyLnRzeA=="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGVhZGVyLnRzeA=="
+        },
+        {
+          "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGVhZGVyL0hlYWRlci50c3g="
         },
         {
           "$ref": "#/definitions/ZGVjby1zaXRlcy90cmlwbGljZWFsaWFuY2Evc2VjdGlvbnMvSGlnaGxpZ2h0cy50c3g="
