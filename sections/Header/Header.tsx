@@ -70,8 +70,8 @@ export default function Header(props: Props) {
         </a>
       </div>
 
-      <div className="navbar-end">
-        <div className="form-control hidden lg:block w-full">
+      <div className="navbar-end md:w-full">
+        <div className="form-control hidden lg:block w-fit">
           <div className="input-group w-full">
             <button
               type="button"
